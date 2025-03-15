@@ -52,7 +52,7 @@ function Dashboard() {
           </div>
 
           {/* Resume Download Button */}
-          <div className="flex justify-center lg:justify-start mt-6 ml-8">
+          <div className="flex justify-center lg:justify-start mt-8 ml-8 z-[-1] relative ">
             <button>
               <a
                 href="/resume.pdf"

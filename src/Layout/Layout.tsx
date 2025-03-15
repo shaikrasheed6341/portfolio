@@ -3,7 +3,7 @@ import Backgroundcomponent from '../Componets/Backgroundcomponent/Backgroundcomp
 import Dashboard from '../Componets/Dashboard/Dashboard';
 import Navbar from '../Componets/Navbar/Navbar';
 import Techstack from '../Componets/Techstack/Techstack';
-import Projects from '../Componets/Projects/Projects';
+import Project from '../Componets/Project/Project';
 
 function Layout() {
   return (
@@ -14,7 +14,8 @@ function Layout() {
         <Dashboard />
         
          <Techstack />
-        <Projects />
+
+        <Project />
 
 
     </div>

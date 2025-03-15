@@ -17,7 +17,7 @@ function Techstack() {
             <div className="text-center mt-9 mb-3">
                 <span className="  text-4xl font-extrabold w-ful bg-gradient-to-tl from-violet-700 to-violet-100 text-transparent bg-clip-text ">Tech Stack</span>
             </div>
-            <div className="flex w-full overflow-hidden py-4 bg-transparent">
+            <div className="flex w-full overflow-hidden py-4 bg-transparent z-[-1] relative">
 
 
                 {/* SVG Gradient Definition */}
