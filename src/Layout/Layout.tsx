@@ -4,6 +4,7 @@ import Dashboard from '../Componets/Dashboard/Dashboard';
 import Navbar from '../Componets/Navbar/Navbar';
 import Techstack from '../Componets/Techstack/Techstack';
 import Project from '../Componets/Project/Project';
+import Aboutus from '../Componets/Aboutme/Aboutme';
 
 function Layout() {
   return (
@@ -16,6 +17,7 @@ function Layout() {
          <Techstack />
 
         <Project />
+        <Aboutus />
 
 
     </div>

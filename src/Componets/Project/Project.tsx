@@ -1,8 +1,8 @@
-
 import Cardcomponent from "./Cardcomponent";
 import invoice from "/invoice.svg";
 import villa from "/villa.svg"
 import Portfolio from "/portfolio.svg"
+
 function Project() {
   return (
     <div className="div">
@@ -15,11 +15,12 @@ function Project() {
         <div>
           <Cardcomponent imgs={[invoice]} title="Invoice Generator" />
         </div>
-        
+
         <div>
           <Cardcomponent imgs={[villa]} title="Villa Rent" />
         </div>
-        <div className=" col-span-2 " >
+
+        <div className="col-span-2   w-1/2  mx-auto justify-center">
           <Cardcomponent imgs={[Portfolio]} title="Portfolio" />
         </div>
       </div>
