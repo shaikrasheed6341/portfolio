@@ -5,7 +5,8 @@ import Navbar from '../Componets/Navbar/Navbar';
 import Techstack from '../Componets/Techstack/Techstack';
 import Project from '../Componets/Project/Project';
 import Aboutus from '../Componets/Aboutme/Aboutme';
-
+import Quation from '../Componets/Quations/Quation';
+import Doutpage from '../Componets/Doutpage/Doutpage';
 function Layout() {
   return (
     <div><Backgroundcomponent />
@@ -18,7 +19,8 @@ function Layout() {
 
         <Project />
         <Aboutus />
-
+        <Quation />
+        <Doutpage />
 
     </div>
   )
