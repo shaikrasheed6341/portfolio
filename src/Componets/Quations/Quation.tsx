@@ -3,7 +3,7 @@ import Quationcard from "./Quationcard";
 const Quation = () => {
     return (
         <div>
-            <div className="grid grid-cols-3 space-x-2 my-3 ">
+            <div className="grid grid-cols-1 lg:grid-cols-3 space-x-2 ">
                 <div>
 
                     <Quationcard title="Modern websites"  iconindex={0} para="I build powerful websites that can potentially empower your company." />

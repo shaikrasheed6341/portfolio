@@ -1,29 +1,21 @@
 
-import Backgroundcomponent from '../Componets/Backgroundcomponent/Backgroundcomponent';
-import Dashboard from '../Componets/Dashboard/Dashboard';
+// Layout.tsx (temporary)
+import { Outlet } from 'react-router-dom';
 import Navbar from '../Componets/Navbar/Navbar';
-import Techstack from '../Componets/Techstack/Techstack';
-import Project from '../Componets/Project/Project';
-import Aboutus from '../Componets/Aboutme/Aboutme';
-import Quation from '../Componets/Quations/Quation';
-import Doutpage from '../Componets/Doutpage/Doutpage';
+import Footer from '../Componets/Footer/Footer';
+import Backgroundcomponent from '../Componets/Backgroundcomponent/Backgroundcomponent';
 function Layout() {
   return (
-    <div><Backgroundcomponent />
-    
+    <>
+      <Backgroundcomponent />
       <Navbar />
-      
-        <Dashboard />
+      <main>
+        <Outlet />
         
-         <Techstack />
-
-        <Project />
-        <Aboutus />
-        <Quation />
-        <Doutpage />
-
-    </div>
-  )
+      </main>
+      <Footer />
+    </>
+  );
 }
 
-export default Layout
+export default Layout;
