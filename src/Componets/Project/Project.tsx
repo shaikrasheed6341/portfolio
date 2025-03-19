@@ -32,7 +32,8 @@ function Project() {
          <Cardcomponent 
           title="Portfolio"
           imgs={[Portfolio]}
-          github=""
+          github="https://github.com/shaikrasheed6341/portfolio"
+          live="#"
          />
          
    
