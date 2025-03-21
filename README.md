@@ -26,43 +26,44 @@ Deployment: Docker, Docker Compose
 
 ```plaintext
 portfolio-website/
-├── src/                    # Source code folder
-│   ├── Components/         # React components
-│   │   ├── Aboutme/        # About Me component
+├── src/                  
+│   ├── Components/     
+│   │   ├── Aboutme/   
+
 │   │   │   └── Aboutme.tsx
-│   │   ├── Contactme/      # Contact Me component
+│   │   ├── Contactme/      
 │   │   │   └── Contactme.tsx
-│   │   ├── Dashboard/      # Dashboard component
+│   │   ├── Dashboard/     
 │   │   │   └── Dashboard.tsx
-│   │   ├── Doutpage/       # Doubt page component
+│   │   ├── Doutpage/      
 │   │   │   └── Doutpage.tsx
-│   │   ├── Footer/         # Footer component
+│   │   ├── Footer/       
 │   │   │   └── Footer.tsx
-│   │   ├── Navbar/         # Navbar component
+│   │   ├── Navbar/      
 │   │   │   └── Navbar.tsx
-│   │   ├── Project/        # Project component
+│   │   ├── Project/       
 │   │   │   └── Project.tsx
-│   │   ├── Quations/       # Quations component
+│   │   ├── Quations/       
 │   │   │   └── Quation.tsx
-│   │   └── Techstack/      # Tech Stack component
+│   │   └── Techstack/      
 │   │       └── Techstack.tsx
-│   ├── Layout/             # Layout component
+│   ├── Layout/             
 │   │   └── Layout.tsx
-│   ├── App.tsx             # Main App component
-│   ├── index.css           # Global CSS file
-│   ├── main.tsx            # Entry point for React
-│   └── vite-env.d.ts       # Vite environment types
-├── public/                 # Public folder for static files
-│   ├── index.html          # HTML template
-│   └── vite.svg            # Vite logo (default)
-├── .gitignore              # Git ignore file
-├── Dockerfile              # Docker configuration file
-├── package-lock.json       # NPM lock file
-├── package.json            # NPM dependencies and scripts
-├── README.md               # This file
-├── tsconfig.json           # TypeScript configuration
-├── tsconfig.node.json      # TypeScript Node configuration
-└── vite.config.ts          # Vite configuration
+│   ├── App.tsx        
+│   ├── index.css         
+│   ├── main.tsx          
+│   └── vite-env.d.ts      
+├── public/               
+│   ├── index.html      
+│   └── vite.svg            
+├── .gitignore              
+├── Dockerfile              
+├── package-lock.json       
+├── package.json            
+├── README.md               
+├── tsconfig.json          
+├── tsconfig.node.json    
+└── vite.config.ts         
 
 
 🚀 Setup Instructions
