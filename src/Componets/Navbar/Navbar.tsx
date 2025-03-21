@@ -31,7 +31,7 @@ function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      className="fixed top-0 w-full z-50 bg-gradient-to-r from-violet-600 to-violet-600 backdrop-blur-md shadow-lg p-4"
+      className="fixed top-0 w-full z-50 bg-gradient-to-r from-violet-600 to-violet-600 backdrop-blur-md shadow-lg"
     >
       <div className="flex justify-between items-center mx-4 lg:mx-12">
         {/* Logo */}
@@ -40,8 +40,8 @@ function Navbar() {
           className="text-3xl font-extrabold text-white tracking-wide cursor-pointer"
           onClick={() => scrollToSection("dashboard")}
         >
-          <div className="rounded-full overflow-hidden w-13 h-13">
-            <img src="sameer.png" alt="logo" className="w-full h-full object-left-bottom" />
+          <div className="rounded-full overflow-hidden w-20 h-20">
+            <img src="logo.png" alt="logo" className="object-left-bottom" />
           </div>
 
 

@@ -22,14 +22,15 @@ Build Tool: Vite
 
 Deployment: Docker, Docker Compose
 
-📁 Folder Structure
+## 📁 Project Folder Structure
 
+```plaintext
 portfolio-website/
 ├── src/                    # Source code folder
 │   ├── Components/         # React components
-│   │   ├── Aboutme/        # Aboutme component
+│   │   ├── Aboutme/        # About Me component
 │   │   │   └── Aboutme.tsx
-│   │   ├── Contactme/      # Contactme component
+│   │   ├── Contactme/      # Contact Me component
 │   │   │   └── Contactme.tsx
 │   │   ├── Dashboard/      # Dashboard component
 │   │   │   └── Dashboard.tsx
@@ -43,7 +44,7 @@ portfolio-website/
 │   │   │   └── Project.tsx
 │   │   ├── Quations/       # Quations component
 │   │   │   └── Quation.tsx
-│   │   └── Techstack/      # Techstack component
+│   │   └── Techstack/      # Tech Stack component
 │   │       └── Techstack.tsx
 │   ├── Layout/             # Layout component
 │   │   └── Layout.tsx
@@ -62,6 +63,7 @@ portfolio-website/
 ├── tsconfig.json           # TypeScript configuration
 ├── tsconfig.node.json      # TypeScript Node configuration
 └── vite.config.ts          # Vite configuration
+
 
 🚀 Setup Instructions
 
@@ -150,6 +152,6 @@ This project is licensed under the MIT License.
 
 LinkedIn: https://www.linkedin.com/in/shaik-rasheed-4b76a9276/
 
-Email: your.shaikrasheed6341@example.com
+Email: your.shaikrasheed6341@gamil.com
 
 ✨ Made with 💜 by Shaik Rasheed ✨
