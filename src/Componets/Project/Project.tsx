@@ -21,23 +21,23 @@ function Project() {
           />
         </div>
         <div className="transform transition duration-500 hover:scale-105">
-          <Cardcomponent imgs={[villa]} 
-          title="Villa Rent" 
-          
-          github= "https://github.com/shaikrasheed6341/VillaRent"
-          live="#"
+          <Cardcomponent imgs={[villa]}
+            title="Villa Rent"
+
+            github="https://github.com/shaikrasheed6341/VillaRent"
+            live="#"
           />
         </div>
-         <div className="transform transition duration-500 hover:scale-105">
-         <Cardcomponent 
-          title="Portfolio"
-          imgs={[Portfolio]}
-          github="https://github.com/shaikrasheed6341/portfolio"
-          live="#"
-         />
-         
-   
-   </div>
+        <div className="transform transition duration-500  justify-center   hover:scale-105 ">
+          <Cardcomponent
+            title="Portfolio"
+            imgs={[Portfolio]}
+            github="https://github.com/shaikrasheed6341/portfolio"
+            live="#"
+          />
+
+
+        </div>
       </div>
     </div>
   );

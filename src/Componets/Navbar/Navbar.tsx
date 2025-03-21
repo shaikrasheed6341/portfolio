@@ -40,7 +40,11 @@ function Navbar() {
           className="text-3xl font-extrabold text-white tracking-wide cursor-pointer"
           onClick={() => scrollToSection("dashboard")}
         >
-          SHAIK
+          <div className="rounded-full overflow-hidden w-13 h-13">
+            <img src="sameer.png" alt="logo" className="w-full h-full object-left-bottom" />
+          </div>
+
+
         </motion.div>
 
         {/* Hamburger Icon (Mobile) */}
@@ -71,7 +75,7 @@ function Navbar() {
         {/* Links (Desktop) */}
         <div className="hidden lg:flex space-x-10">
           <ul className="flex items-center space-x-10">
-            {["dashboard", "techstack", "project", "contact"].map((section) => (
+            {["techstack", "project", "contact", "about"].map((section) => (
               <motion.li
                 key={section}
                 variants={linkVariants}
