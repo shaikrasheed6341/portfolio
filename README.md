@@ -26,6 +26,7 @@ Deployment: Docker, Docker Compose
 
 ```plaintext
 portfolio-website/
+<<<<<<< HEAD
 ├── src/                  
 │   ├── Components/     
 │   │   ├── Aboutme/   
@@ -63,6 +64,44 @@ portfolio-website/
 ├── README.md               
 ├── tsconfig.json          
 ├── tsconfig.node.json    
+=======
+├── src/                    
+│   ├── Components/       
+│   │   ├── Aboutme/      
+│   │   │   └── Aboutme.tsx
+│   │   ├── Contactme/      
+│   │   │   └── Contactme.tsx
+│   │   ├── Dashboard/      
+│   │   │   └── Dashboard.tsx
+│   │   ├── Doutpage/       
+│   │   │   └── Doutpage.tsx
+│   │   ├── Footer/        
+│   │   │   └── Footer.tsx
+│   │   ├── Navbar/         
+│   │   │   └── Navbar.tsx
+│   │   ├── Project/      
+│   │   │   └── Project.tsx
+│   │   ├── Quations/       
+│   │   │   └── Quation.tsx
+│   │   └── Techstack/     
+│   │       └── Techstack.tsx
+│   ├── Layout/          
+│   │   └── Layout.tsx
+│   ├── App.tsx         
+│   ├── index.css        
+│   ├── main.tsx           
+│   └── vite-env.d.ts    
+├── public/                
+│   ├── index.html          
+│   └── vite.svg            
+├── .gitignore           
+├── Dockerfile            
+├── package-lock.json       
+├── package.json            
+├── README.md              
+├── tsconfig.json           
+├── tsconfig.node.json      
+>>>>>>> 95b57cb8a87586d54aac25a947d65cbef8141eca
 └── vite.config.ts         
 
 
@@ -85,7 +124,7 @@ npm run dev
 
 Open the website:
 
-http://localhost:3000
+http://localhost:5173
 
 🐳 Docker Setup
 
