@@ -17,7 +17,7 @@ function Project() {
             imgs={[invoice]}
             title="Invoice Generator"
             github="https://github.com/shaikrasheed6341/invoiceGenrator"
-            live="#"
+            live="https://invoice-genrator-tvpk.vercel.app/"
           />
         </div>
         <div className="transform transition duration-500 hover:scale-105">
@@ -33,7 +33,7 @@ function Project() {
             title="Portfolio"
             imgs={[Portfolio]}
             github="https://github.com/shaikrasheed6341/portfolio"
-            live="#"
+            live="https://portfolio-shaik.vercel.app/"
           />
 
 
