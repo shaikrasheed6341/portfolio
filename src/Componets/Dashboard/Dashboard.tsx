@@ -1,14 +1,17 @@
 import { useTypewriter } from "react-simple-typewriter";
-import { FaDownload } from "react-icons/fa";
+import { FaDownload, FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 function Dashboard() {
   const [text] = useTypewriter({
-    words: ["Full-Stack Web Developer", "Problem Solver"],
+    words: ["Full-Stack Web Developer", "Problem Solver", "Creative Thinker"],
     loop: 0,
+    typeSpeed: 100,
+    deleteSpeed: 50,
   });
 
   // Function for smooth scrolling
-  const scrollToSection = (sectionId:string) => {
+  const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -16,65 +19,144 @@ function Dashboard() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-white mt-10 p-5">
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full max-w-5xl gap-10">
-        {/* Text Section */}
-        <div className="lg:w-1/2 text-center lg:text-left mt-10 lg:mt-0 z-10">
-          <h1 className="text-5xl font-extrabold bg-gradient-to-tl from-purple-400 to-violet-600 bg-clip-text text-transparent leading-tight animate-fadeInUp">
-            Hi, I'm <span className="text-gray-100">Shaik Rasheed</span>
-          </h1>
-          <p className="mt-5 text-2xl font-medium leading-relaxed animate-slideIn text-gray-200">
-            <span className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-tr from-violet-600 to-violet-400">
-              {text}
-            </span>
-          </p>
+    <section className="min-h-screen flex items-center justify-center py-20 px-4">
+      <div className="container-premium">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Content Section */}
+          <motion.div 
+            className="text-center lg:text-left space-y-8"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            {/* Greeting */}
+            <div className="mt-10">
+              <motion.h2 
+                className="text-lg font-medium text-zinc-300"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 0.6 }}
+              >
+                Hello, I'm
+              </motion.h2>
+              
+              <motion.h1 
+                className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.6 }}
+              >
+                Shaik Rasheed
+              </motion.h1>
+            </div>
 
-          {/* Buttons */}
-          <div className="mt-10 flex justify-center lg:justify-start gap-5 animate-fadeInDown lg:space-x-10">
-            <a
-              href="#project"
-              className="px-6 py-3 text-lg font-bold bg-gradient-to-br from-violet-600 to-violet-700 hover:from-violet-600 hover:to-violet-800 transition-all rounded-xl shadow-lg transform hover:scale-110"
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection("project"); // Links to Project component
-              }}
+            {/* Typewriter Text */}
+            <motion.div 
+              className="space-y-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.6 }}
             >
-              Explore My Work
-            </a>
-            <a
-              href="#contact"
-              className="px-15 py-3 text-lg font-bold bg-violet-700 hover:bg-gray-800 transition-all rounded-xl shadow-lg transform hover:scale-110"
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection("contact"); // Links to Contactme component
-              }}
-            >
-              Hire Me
-            </a>
-          </div>
+              <p className="text-xl sm:text-2xl text-zinc-300 font-medium">
+                I'm a{" "}
+                <span className="text-white font-bold">
+                  {text}
+                </span>
+                <span className="animate-pulse-slow">|</span>
+              </p>
+              
+              <p className="text-lg text-gray-200 leading-relaxed max-w-lg">
+                Passionate about creating beautiful, functional, and user-centered digital experiences that make a difference.
+              </p>
+            </motion.div>
 
-          {/* Resume Download Button */}
-          <div className="mt-6 flex justify-center lg:justify-start lg:mt-10 lg:ml-20 animate-fadeInUp">
-            <a
-              href="/shaikrasheed.pdf"
-              download="Shaik_Rasheed_Resume.pdf"
-              className="flex items-center gap-2 px-7 py-3 text-lg text-gray-100 font-bold bg-gradient-to-br from-violet-600 to-violet-700 hover:from-violet-600 hover:to-gray-200 transition-all rounded-xl shadow-lg transform hover:scale-110"
+            {/* Action Buttons */}
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.6 }}
             >
-              <FaDownload className="text-white" /> Download Resume
-            </a>
-          </div>
+              <button
+                onClick={() => scrollToSection("project")}
+                className="btn-premium group flex items-center justify-center gap-2"
+              >
+                View My Work
+                <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-200" />
+              </button>
+              
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="btn-premium-secondary group flex items-center justify-center gap-2"
+              >
+                Let's Talk
+                <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-200" />
+              </button>
+            </motion.div>
+
+            {/* Resume Download */}
+            <motion.div 
+              className="flex justify-center  lg:justify-start"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.0, duration: 0.6 }}
+            >
+              <a
+                href="/shaikrasheed.pdf"
+                download="Shaik_Rasheed_Resume.pdf"
+                className="inline-flex items-center  bg-white gap-3 px-6 py-3 text-black rounded-2xl   hover:text-black font-medium transition-all duration-200 group"
+              >
+                <div className="w-10 h-10 rounded-lg bg-white group-hover:bg-white flex items-center justify-center transition-colors duration-200">
+                  <FaDownload className="text-black " />
+                </div>
+                <span >Download Resume</span>
+              </a>
+            </motion.div>
+          </motion.div>
+
+          {/* Image Section */}
+          <motion.div 
+            className="flex justify-center lg:justify-end"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <div className="relative">
+              {/* Background decoration */}
+              <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-slate-700 rounded-3xl transform rotate-6 scale-105 opacity-20"></div>
+              
+              {/* Main image container */}
+              <div className="relative bg-zinc-900/50 backdrop-blur-sm rounded-3xl shadow-premium-lg p-8 border border-zinc-800">
+                <img
+                  src="/main.svg"
+                  alt="Shaik Rasheed - Full Stack Developer"
+                  className="w-full max-w-md animate-float"
+                />
+              </div>
+              
+              {/* Floating elements */}
+              <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-br from-zinc-600 to-slate-500 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
+              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-br from-slate-600 to-zinc-500 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
+            </div>
+          </motion.div>
         </div>
 
-        {/* Image Section */}
-        <div className="lg:w-1/2 flex justify-center z-10">
-          <img
-            src="/main.svg"
-            alt="main"
-            className="w-[70%] lg:w-[450px] animate-float drop-shadow-2xl"
-          />
-        </div>
+        {/* Scroll indicator */}
+        <motion.div 
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2, duration: 0.6 }}
+        >
+          <div className="flex flex-col items-center space-y-2">
+            <span className="text-sm text-zinc-400 font-medium">Scroll to explore</span>
+            <div className="w-6 h-10 border-2 border-zinc-700 rounded-full flex justify-center">
+              <div className="w-1 h-3 bg-zinc-500 rounded-full mt-2 animate-bounce"></div>
+            </div>
+          </div>
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
 

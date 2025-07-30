@@ -7,6 +7,7 @@ import Contactme from "./Componets/Contactme/Contactme";
 import Aboutus from "./Componets/Aboutme/Aboutme";
 import Quation from "./Componets/Quations/Quation";
 import Doutpage from "./Componets/Doutpage/Doutpage";
+
 function App() {
   return (
     <BrowserRouter>
@@ -15,15 +16,15 @@ function App() {
           <Route
             index
             element={
-              <div className="space-y-10">
-                <section id="dashboard"><Dashboard /></section>
-                <section id="techstack"><Techstack /></section>
-                <section id="project"><Project /></section>
-                <section id="about"><Aboutus /></section>
-                <section id="quotation"><Quation /></section>
-                <section id="doubt"><Doutpage /></section>
-                <section id="contact"><Contactme /></section>
-              </div>
+              <>
+                <Dashboard />
+                <Techstack />
+                <Project />
+                <Aboutus />
+                <Quation />
+                <Doutpage />
+                <Contactme />
+              </>
             }
           />
         </Route>
