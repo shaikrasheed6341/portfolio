@@ -23,16 +23,7 @@ const projects = [
     technologies: ["React", "Node.js", "MongoDB", "Express"],
     category: "Full Stack"
   },
-  {
-    id: 3,
-    title: "Portfolio",
-    description: "A modern, responsive portfolio website showcasing my skills, projects, and professional journey.",
-    image: "/portfolio.svg",
-    github: "https://github.com/shaikrasheed6341/portfolio",
-    live: "https://portfolio-shaik.vercel.app/",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    category: "Portfolio"
-  }
+
 ];
 
 function Project() {
