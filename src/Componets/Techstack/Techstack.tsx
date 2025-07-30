@@ -20,8 +20,6 @@ const techStack = [
   { icon: FaDocker, name: "Docker", category: "Tools" }
 ];
 
-const categories = ["All", "Frontend", "Backend", "Language", "Database", "Styling", "Tools"];
-
 function Techstack() {
   return (
     <section className="py-20 px-4" id="techstack">
