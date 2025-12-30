@@ -139,22 +139,7 @@ function Dashboard() {
               <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-br from-slate-600 to-zinc-500 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
             </div>
           </motion.div>
-        </div>
-
-        {/* Scroll indicator */}
-        <motion.div 
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.2, duration: 0.6 }}
-        >
-          <div className="flex flex-col items-center space-y-2">
-            <span className="text-sm text-zinc-400 font-medium">Scroll to explore</span>
-            <div className="w-6 h-10 border-2 border-zinc-700 rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-zinc-500 rounded-full mt-2 animate-bounce"></div>
-            </div>
-          </div>
-        </motion.div>
+        </div>  
       </div>
     </section>
   );

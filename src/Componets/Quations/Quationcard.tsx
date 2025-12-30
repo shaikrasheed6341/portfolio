@@ -22,16 +22,16 @@ const Quationcard: React.FC<Quationcardprop> = ({ title, para, iconindex }) => {
       <div className="card-premium p-8 text-center h-full hover:shadow-premium-lg transition-all duration-300">
         {/* Icon */}
         <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-zinc-100 to-slate-200 flex items-center justify-center group-hover:from-zinc-200 group-hover:to-slate-300 transition-all duration-300">
-          <Iconcomponent className="text-2xl text-zinc-700 group-hover:text-zinc-900 transition-colors duration-300" />
+          <Iconcomponent className="text-2xl text-zinc-900  transition-colors duration-300" />
         </div>
 
         {/* Title */}
-        <h3 className="text-xl font-bold text-zinc-800 mb-4 group-hover:text-zinc-900 transition-colors duration-200">
+        <h3 className="text-xl font-bold text-white mb-4 group-hover:text-white transition-colors duration-200">
           {title}
         </h3>
 
         {/* Description */}
-        <p className="text-zinc-600 leading-relaxed">
+        <p className="text-zinc-100 leading-relaxed">
           {para}
         </p>
       </div>

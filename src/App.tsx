@@ -6,7 +6,9 @@ import Project from "./Componets/Project/Project";
 import Contactme from "./Componets/Contactme/Contactme";
 import Aboutus from "./Componets/Aboutme/Aboutme";
 import Quation from "./Componets/Quations/Quation";
+
 import Doutpage from "./Componets/Doutpage/Doutpage";
+import WorkExperienceProjects from "./Componets/WorkExperienceProjects/WorkExperienceProjects";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
               <>
                 <Dashboard />
                 <Techstack />
+
+                <WorkExperienceProjects />
                 <Project />
                 <Aboutus />
                 <Quation />

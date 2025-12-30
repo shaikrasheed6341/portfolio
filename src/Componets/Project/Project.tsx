@@ -23,6 +23,26 @@ const projects = [
     technologies: ["React", "Node.js", "MongoDB", "Express"],
     category: "Full Stack"
   },
+  {
+    id: 3,
+    title: "SIH_HACKTHON Aadhaar-seeding-vs-DBT",   
+    description: "A project focused on Aadhaar seeding and DBT integration for government initiatives.",
+    image: "/dbt.svg",
+    github: "https://github.com/shaikrasheed6341/Aadhaar-seeding-vs-DBT.git",
+    live: "#",
+    technologies: ["React", "Node.js", "MongoDB", "Express"],
+    category: "Full Stack"
+  },
+  {
+    id: 4,
+    title: "Fitness Sass",
+    description: "A fitness application built with modern technologies for tracking workouts, nutrition, and health metrics.",
+    image: "/portfolio.svg",
+    github: "#",
+    live: "#",
+    technologies: ["React", "Prisma", "Supabase", "Node.js", "Postgress", "TypeScript", "Tailwind CSS", "Vite"],
+    category: "Web Application"
+  }
 
 ];
 
