@@ -33,17 +33,6 @@ const projects = [
     technologies: ["React", "Node.js", "MongoDB", "Express"],
     category: "Full Stack"
   },
-  {
-    id: 4,
-    title: "Fitness Sass",
-    description: "A fitness application built with modern technologies for tracking workouts, nutrition, and health metrics.",
-    image: "/portfolio.svg",
-    github: "#",
-    live: "#",
-    technologies: ["React", "Prisma", "Supabase", "Node.js", "Postgress", "TypeScript", "Tailwind CSS", "Vite"],
-    category: "Web Application"
-  }
-
 ];
 
 function Project() {
