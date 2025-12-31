@@ -25,7 +25,7 @@ function Techstack() {
     <section className="py-20 px-4" id="techstack">
       <div className="container-premium">
         {/* Header */}
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -63,7 +63,7 @@ function Techstack() {
         </div>
 
         {/* Animated Tech Carousel */}
-        <motion.div 
+        <motion.div
           className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-zinc-900/50 to-slate-900/50 p-8 border border-zinc-800"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -71,7 +71,7 @@ function Techstack() {
           viewport={{ once: true }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-zinc-800/20 to-transparent z-10"></div>
-          
+
           <motion.div
             className="flex gap-8 items-center"
             animate={{ x: [0, -1000, 0] }}
@@ -89,7 +89,7 @@ function Techstack() {
         </motion.div>
 
         {/* Skills Summary */}
-        <motion.div 
+        <motion.div
           className="mt-16 grid md:grid-cols-3 gap-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -103,21 +103,13 @@ function Techstack() {
             <h3 className="font-semibold text-zinc-200 mb-2">Frontend Development</h3>
             <p className="text-zinc-400 text-sm">Building responsive and interactive user interfaces with modern frameworks.</p>
           </div>
-          
+
           <div className="text-center">
             <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-zinc-800 to-slate-700 flex items-center justify-center">
               <FaNode className="text-3xl text-zinc-300" />
             </div>
             <h3 className="font-semibold text-zinc-200 mb-2">Backend Development</h3>
             <p className="text-zinc-400 text-sm">Creating robust server-side applications and APIs with Node.js ecosystem.</p>
-          </div>
-          
-          <div className="text-center">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-zinc-800 to-slate-700 flex items-center justify-center">
-              <FaDocker className="text-3xl text-zinc-300" />
-            </div>
-            <h3 className="font-semibold text-zinc-200 mb-2">DevOps & Tools</h3>
-            <p className="text-zinc-400 text-sm">Deployment, containerization, and development workflow optimization.</p>
           </div>
         </motion.div>
       </div>

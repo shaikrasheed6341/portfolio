@@ -55,13 +55,13 @@ const Contactme = () => {
     {
       icon: FaLinkedin,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/shaikrasheed",
+      url: "https://www.linkedin.com/in/shaik-raseed-4b76a9276/",
       color: "hover:text-blue-600"
     },
     {
       icon: FaTwitter,
       name: "Twitter",
-      url: "https://twitter.com/shaikrasheed",
+      url: "https://x.com/shaikrasheed634",
       color: "hover:text-blue-400"
     }
   ];
@@ -70,7 +70,7 @@ const Contactme = () => {
     <section className="py-20 px-4" id="contact">
       <div className="container-premium">
         {/* Header */}
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -87,7 +87,7 @@ const Contactme = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Contact Information */}
-          <motion.div 
+          <motion.div
             className="space-y-8"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -121,7 +121,7 @@ const Contactme = () => {
                     <div>
                       <h4 className="font-semibold text-zinc-200">{info.title}</h4>
                       {info.link ? (
-                        <a 
+                        <a
                           href={info.link}
                           className="text-zinc-400 hover:text-white transition-colors duration-200"
                         >
@@ -156,7 +156,7 @@ const Contactme = () => {
           </motion.div>
 
           {/* Contact Form */}
-          <motion.div 
+          <motion.div
             className="card-premium p-8"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -166,7 +166,7 @@ const Contactme = () => {
             <h3 className="text-2xl font-bold text-white mb-6">
               Send a Message
             </h3>
-            
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
@@ -184,7 +184,7 @@ const Contactme = () => {
                     placeholder="Your name"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-zinc-300 mb-2">
                     Email
@@ -201,7 +201,7 @@ const Contactme = () => {
                   />
                 </div>
               </div>
-              
+
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-zinc-300 mb-2">
                   Subject
@@ -217,7 +217,7 @@ const Contactme = () => {
                   placeholder="Project inquiry"
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-zinc-300 mb-2">
                   Message
@@ -233,7 +233,7 @@ const Contactme = () => {
                   placeholder="Tell me about your project..."
                 />
               </div>
-              
+
               <button
                 type="submit"
                 className="w-full btn-premium group flex items-center justify-center gap-2"
